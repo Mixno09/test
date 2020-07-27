@@ -1,0 +1,12 @@
+<?php
+
+use App\User;
+
+/** @var \App\User|null $user */
+?>
+
+<?php if ($user instanceof User) : ?>
+    <h1>Hello, <?= htmlspecialchars($user->name) ?>!</h1>
+<?php else: ?>
+    <h1>Hello, гость!</h1>
+<?php endif; ?>
